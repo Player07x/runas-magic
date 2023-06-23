@@ -9,10 +9,10 @@
 <body onload="focoElemental()">
     <header><h1>Criar Magia</h1></header>
 
-    <section>
+    <section id="form">
 
         <div>
-            <p>Nome: <input type="text">
+            <p>Nome: <input type="text" name="nome">
             <p>Foco: <select name="foco" id="foco" onchange="focoMagico()">
                 <option value="1">Elemental</option>
                 <option value="2">Arcano</option>
@@ -23,11 +23,13 @@
         <div id="divMagic"></div>
 
         <div id="desc">
-            <p>Alcance: <input type="text"></p>
-            <p>Custo: <input type="text"></p>
-            <p>Duração: <input type="text"></p>
-            <p><button>Criar Magia</button></p>
+            <p>Alcance: <input type="text" name="alcance"></p>
+            <p>Custo: <input type="text" name="custo"></p>
+            <p>Duração: <input type="text" name="duracao"></p>
+            <p><button onclick="criarMagia()">Criar Magia</button></p>
         </div>
+
+        <div id="resultado"></div>
 
     </section>
 

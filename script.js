@@ -87,3 +87,14 @@ function criarExtensao(tipo) {
             botao[1].remove()
     } 
 }
+
+function criarMagia() {
+    let resultado, div
+    resultado = document.getElementById('resultado')
+    div = document.getElementsByName()
+    //for (e in div) {
+        //switch (e) {
+        //    case 
+        //}
+    //}
+}
