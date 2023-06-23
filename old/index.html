@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Criador de Magias</h1>
+    </header>
+
+    <section>
+        <!--DIV para o título e foco mágico-->
+        <div>
+        <p>Nome: <input type="text">
+        <p>Foco: <select name="foco" id="foco" onchange="focoMagico()">
+            <option value="1">Elemental</option>
+            <option value="2">Arcano</option>
+            <option value="3">Divino</option>
+        </select></p>
+        </div>
+        <!--DIV para as magias ELEMENTAIS-->
+        <div id="elemental">
+            <p>Descrição: <input type="text"></p>
+            <p>Tipo: <select name="" id="">
+                <option value="">Magia Rápida</option>
+                <option value="">Feitiço</option>
+                <option value="">Aura</option>
+            </select></p>
+            <p>Ampliação 1: <input type="text"><br><div id="extensaoA"></div>
+            <button id="botaoAmp" onclick="criarExtensao('Ampliação')">+Ampliação</button></p>
+            <p>Redução 1: <input type="text"><br> <div id="extensaoR"></div>
+            <button id="botaoRed" onclick="criarExtensao('Redução')">+Redução</button></p>
+        </div>
+        <!--DIV para as magias ARCANAS-->
+        <div id="arcano" style="display: none;">
+            <p>Descrição: <input type="text"></p>
+            <p>Tipo: <select name="" id="">
+                <option value="">Magia Rápida</option>
+                <option value="">Feitiço</option>
+                <option value="">Aura</option>
+                <option value="">Ritual</option>
+                <option value="">Encantamento</option>
+            </select></p>
+            <p>Qualidade: <input type="text"><br>
+            <p>Defeito: <input type="text"><br>
+        </div>
+        <!--DIV para as magias DIVINAS-->
+        <div id="divino" style="display: none;">
+            <p>Descrição: <input type="text"></p>
+            <p>Tipo: <select name="" id="">
+                <option value="">Benção</option>
+                <option value="">Milagre</option>
+            </select></p>
+            <p>Divindades: <input type="text" name="" id=""></p>
+            <p>Bônus de Divindade: <input type="text"><br>
+            <p>Punição: <input type="text"><br>
+        </div>
+        <!--DIV para a descrição geral das magias-->
+        <div id="desc">
+            <p>Alcance: <input type="text"></p>
+            <p>Custo: <input type="text"></p>
+            <p>Duração: <input type="text"></p>
+            <p><button>Criar Magia</button></p>
+        </div>
+    </section>
+
+    <footer>
+        &copy;Pixely_Games
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="focoElemental()">
+    <header><h1>Criar Magia</h1></header>
+
+    <section>
+
+        <div>
+            <p>Nome: <input type="text">
+            <p>Foco: <select name="foco" id="foco" onchange="focoMagico()">
+                <option value="1">Elemental</option>
+                <option value="2">Arcano</option>
+                <option value="3">Divino</option>
+            </select></p>
+        </div>
+
+        <div id="divMagic"></div>
+
+        <div id="desc">
+            <p>Alcance: <input type="text"></p>
+            <p>Custo: <input type="text"></p>
+            <p>Duração: <input type="text"></p>
+            <p><button>Criar Magia</button></p>
+        </div>
+
+    </section>
+
+    <footer>&copy;Pixely_Games</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
